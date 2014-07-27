@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/img">
+        <file alias="background">img/backgroud.jpg</file>
+        <file alias="addbook">img/addbook.png</file>
+        <file alias="backup">img/backup.png</file>
+        <file alias="borrowbook">img/borrowbook.png</file>
+        <file alias="listnow">img/listnow.png</file>
+        <file alias="listbook">img/listbook.png</file>
+        <file alias="listborrow">img/listborrow.png</file>
+        <file alias="listreader">img/listreader.png</file>
+        <file alias="listreturn">img/listreturn.png</file>
+        <file alias="returnbook">img/returnbook.png</file>
+        <file alias="addreader">img/addreader.png</file>
+        <file alias="mngbook">img/mngbook.png</file>
+        <file alias="mngreader">img/mngreader.png</file>
+        <file alias="mngsys">img/mngsys.png</file>
+        <file alias="welcome">img/welcome.png</file>
+        <file alias="delreader">img/delreader.png</file>
+        <file alias="app">img/app.ico</file>
+    </qresource>
+</RCC>

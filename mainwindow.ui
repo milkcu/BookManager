@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>图书管理系统</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/img/welcome</normaloff>:/img/welcome</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>731</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QGroupBox" name="groupBox_book">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="title">
+        <string>图书管理</string>
+       </property>
+       <widget class="QPushButton" name="pushButton_listbook">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>25</x>
+          <y>30</y>
+          <width>80</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>图书列表</string>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/img/listbook</normaloff>:/img/listbook</iconset>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_borrowbook">
+        <property name="geometry">
+         <rect>
+          <x>175</x>
+          <y>30</y>
+          <width>80</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>借阅图书</string>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/img/borrowbook</normaloff>:/img/borrowbook</iconset>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_returnbook">
+        <property name="geometry">
+         <rect>
+          <x>475</x>
+          <y>30</y>
+          <width>80</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>归还图书</string>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/img/returnbook</normaloff>:/img/returnbook</iconset>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_listnow">
+        <property name="geometry">
+         <rect>
+          <x>325</x>
+          <y>30</y>
+          <width>80</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>当前借阅</string>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/img/listnow</normaloff>:/img/listnow</iconset>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_addbook">
+        <property name="geometry">
+         <rect>
+          <x>625</x>
+          <y>30</y>
+          <width>80</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>添加图书</string>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/img/addbook</normaloff>:/img/addbook</iconset>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox_reader">
+       <property name="title">
+        <string>用户管理</string>
+       </property>
+       <widget class="QPushButton" name="pushButton_listreader">
+        <property name="geometry">
+         <rect>
+          <x>25</x>
+          <y>30</y>
+          <width>80</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>读者列表</string>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/img/listreader</normaloff>:/img/listreader</iconset>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_addreader">
+        <property name="geometry">
+         <rect>
+          <x>175</x>
+          <y>30</y>
+          <width>80</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>添加读者</string>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/img/addreader</normaloff>:/img/addreader</iconset>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_delreader">
+        <property name="geometry">
+         <rect>
+          <x>325</x>
+          <y>30</y>
+          <width>80</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>删除读者</string>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/img/delreader</normaloff>:/img/delreader</iconset>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox_sys">
+       <property name="title">
+        <string>系统管理</string>
+       </property>
+       <widget class="QPushButton" name="pushButton_listborrow">
+        <property name="geometry">
+         <rect>
+          <x>25</x>
+          <y>30</y>
+          <width>80</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>借阅记录</string>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/img/listborrow</normaloff>:/img/listborrow</iconset>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_listreturn">
+        <property name="geometry">
+         <rect>
+          <x>175</x>
+          <y>30</y>
+          <width>80</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>归还记录</string>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/img/listreturn</normaloff>:/img/listreturn</iconset>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_backup">
+        <property name="geometry">
+         <rect>
+          <x>325</x>
+          <y>30</y>
+          <width>80</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>数据备份</string>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/img/backup</normaloff>:/img/backup</iconset>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="widget_welcome" native="true">
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/img/background);</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>731</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QWebView" name="webView">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="font">
+        <font>
+         <family>宋体</family>
+        </font>
+       </property>
+       <property name="url">
+        <url>
+         <string>http://milkcu.qiniudn.com/book-manager/welcome.html</string>
+        </url>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="selectionMode">
+        <enum>QAbstractItemView::SingleSelection</enum>
+       </property>
+       <property name="selectionBehavior">
+        <enum>QAbstractItemView::SelectRows</enum>
+       </property>
+       <attribute name="horizontalHeaderCascadingSectionResizes">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>75</number>
+       </attribute>
+       <attribute name="verticalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>570</y>
+      <width>361</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>刘新桐   11计信 201101110407   Email:liuxintong@outlook.com</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>570</y>
+      <width>261</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>数据库实用技术实验作业 - 图书管理系统</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="welcome"/>
+   <addaction name="mngbook"/>
+   <addaction name="mngreader"/>
+   <addaction name="mngsys"/>
+  </widget>
+  <action name="mngbook">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/mngbook</normaloff>:/img/mngbook</iconset>
+   </property>
+   <property name="text">
+    <string>图书管理</string>
+   </property>
+  </action>
+  <action name="mngreader">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/mngreader</normaloff>:/img/mngreader</iconset>
+   </property>
+   <property name="text">
+    <string>读者管理</string>
+   </property>
+  </action>
+  <action name="mngsys">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/mngsys</normaloff>:/img/mngsys</iconset>
+   </property>
+   <property name="text">
+    <string>系统管理</string>
+   </property>
+  </action>
+  <action name="welcome">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/welcome</normaloff>:/img/welcome</iconset>
+   </property>
+   <property name="text">
+    <string>欢迎使用</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QWebView</class>
+   <extends>QWidget</extends>
+   <header>QtWebKitWidgets/QWebView</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
